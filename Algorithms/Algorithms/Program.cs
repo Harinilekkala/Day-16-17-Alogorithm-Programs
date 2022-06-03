@@ -6,14 +6,18 @@ namespace AlgorithamProblems
     {
 
 
-        static void Main(String[] args)
+        public static void Main(String[] args)
         {
-
-
-            Algorithms.BubbleSort value = new Algorithms.BubbleSort();
-            value.bubble();
-            Console.Read();
+            
+            int[] arr = { 12, 11, 13, 5, 6, 7 };
+            Console.WriteLine("Given Array " );
+            Console.WriteLine(arr);
+            Algorithms.MergeSort ob = new Algorithms.MergeSort();
+            ob.sort(arr, 0, arr.Length - 1);
+            Console.WriteLine("\nSorted array");
+            ob.printArray(arr);
         }
-    }
 
+
+    }
 }
