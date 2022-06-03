@@ -6,18 +6,28 @@ namespace AlgorithamProblems
     {
 
 
-        public static void Main(String[] args)
+        static void Main(String[] args)
         {
-            
-            int[] arr = { 12, 11, 13, 5, 6, 7 };
-            Console.WriteLine("Given Array " );
-            Console.WriteLine(arr);
-            Algorithms.MergeSort ob = new Algorithms.MergeSort();
-            ob.sort(arr, 0, arr.Length - 1);
-            Console.WriteLine("\nSorted array");
-            ob.printArray(arr);
+            string firstString, secondString;
+            //Gets words from user.  
+            Console.WriteLine("Enter first string");
+            firstString = Console.ReadLine();
+            Console.WriteLine("Enter second string");
+            secondString = Console.ReadLine();
+            Algorithms.Anagram anagram = new Algorithms.Anagram();
+            //Check if words are anagram  
+            if (anagram.AnagramSort(firstString, secondString) == true)
+            {
+                Console.WriteLine("Both string are anagram string.");
+            }
+            else
+            {
+                Console.WriteLine("Both string are not anagram string.");
+            }
+            Console.ReadLine();
+
+
         }
-
-
     }
+
 }
