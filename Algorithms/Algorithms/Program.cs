@@ -5,21 +5,15 @@ namespace AlgorithamProblems
     class program
     {
 
-        public static void Main(String[] args)
+
+        static void Main(String[] args)
         {
 
-            string[] names = { "Harini Lekkala", "Ojaswi Bandaru", "Vineela Bandaru", "Shanthi Lekkala" };
-            Algorithms.Insertion value = new Algorithms.Insertion();
-            value.InsertionSort(names);
-            foreach (var item in names)
-            {
-                Console.WriteLine(item);
-            }
 
-
-
+            Algorithms.BubbleSort value = new Algorithms.BubbleSort();
+            value.bubble();
+            Console.Read();
         }
-
-
     }
+
 }
