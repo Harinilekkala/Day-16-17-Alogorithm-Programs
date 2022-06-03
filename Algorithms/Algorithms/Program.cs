@@ -7,19 +7,19 @@ namespace AlgorithamProblems
 
         public static void Main(String[] args)
         {
-            String[] input = { "Harini", "Harshini", "Harshitha", "Haritha" };
-            String find = "Harshini";
-            Algorithms.BinarySearch example = new Algorithms.BinarySearch();
-            int result = example.binarySearch(input, find);
 
-            if (result == -1)
-                Console.WriteLine("Element not present");
-            else
-                Console.WriteLine("Element found at " + "index " + result);
+            string[] names = { "Harini Lekkala", "Ojaswi Bandaru", "Vineela Bandaru", "Shanthi Lekkala" };
+            Algorithms.Insertion value = new Algorithms.Insertion();
+            value.InsertionSort(names);
+            foreach (var item in names)
+            {
+                Console.WriteLine(item);
+            }
+
+
+
         }
 
+
     }
-
-
-
 }
